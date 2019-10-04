@@ -1,0 +1,76 @@
+<ion-content>
+  <div class="back">
+    <ion-icon name="arrow-back"></ion-icon>
+  </div>
+  <ion-header>
+    <ion-toolbar>
+      <img src="/assets/logo.svg" alt="medprevent" />
+    </ion-toolbar>
+  </ion-header>
+  <h1 class="title text-clr withIcon">
+    Doetinchem - Station
+    <span class="header-img">Downloaden<img src="/assets/pdf.png"/></span>
+  </h1>
+  <h1 class="content-title">
+    Advies Restrisico's
+  </h1>
+  <ion-card class="details-card">
+    <ion-card-content>
+      Bedrijfshulpverlening (BHV) is onderdeel van het arbobeleid en draagt bij
+      tot de beheersing van de veiligheid- en gezondheidsrisico's in de
+      onderneming. De risico's die overblijven na het uitvoeren van de RI&E en
+      het maken en uitvoeren van het Plan van Aanpak heten 'restrisico's. Voor
+      het beheersen van deze restrisico's is een doeltreffende BHV-organisatie
+      nodig. Iedere organisatie dient te beschikken over één of meer werknemers
+      die aangewezen zijn als bedrijfshulpverleners (BHV). Deze bijstand bestaat
+      in ieder geval uit het verlenen van eerste hulp bij ongevallen: 
+      het beperken en het bestrijden van brand en het beperken van de gevolgen van
+      ongevallen; het in noodsituaties alarmeren en evacueren van alle
+      werknemers en andere personen in het bedrijf of de inrichting
+    </ion-card-content>
+  </ion-card>
+  <div class="m-t-2">
+    <ion-card
+      class="accordian-card"
+      (click)="expandItem(item)"
+    >
+      <ion-card-header class="accordian-card-header">
+        <ion-card-title class="accordian-header-title"
+          >Algemene restrisico's</ion-card-title
+        >
+      </ion-card-header>
+
+      <!-- <ion-card-content>
+        <app-expandable-menu expandHeight="100px" [expanded]="item.expanded">
+          <p>
+            Hello there.
+          </p>
+          <p>
+            Hello there.
+          </p>
+          <p>
+            Hello there.
+          </p>
+          <p>
+            Hello there.
+          </p>
+          <p>
+            Hello there.
+          </p>
+          <p>
+            Hello there.
+          </p>
+        </app-expandable-menu>
+      </ion-card-content> -->
+    </ion-card>
+  </div>
+</ion-content>
+
+<ion-tabs>
+  <ion-tab-bar slot="bottom">
+    <ion-tab-button tab="1">
+      <ion-label><img src="/assets/tab-icon-1.svg"/></ion-label>
+      <!-- <ion-badge>6</ion-badge> -->
+    </ion-tab-button>
+  </ion-tab-bar>
+</ion-tabs>

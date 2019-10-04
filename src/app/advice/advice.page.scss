@@ -1,0 +1,201 @@
+.datatable-main {
+  width: 90%;
+  margin: auto;
+  ul {
+    margin-bottom: 0.5em;
+    &.header {
+      list-style: none;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: flex-start;
+      li {
+        width: 33.3333%;
+        padding: 1.2em 1em;
+        text-align: left;
+        white-space: nowrap;
+        font-size: 10px;
+        font-weight: bolder;
+        background-color: #eff8fb;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        position: relative;
+        &:first-child {
+          border-radius: 4px 0 0 4px;
+          padding-left: 45px;
+        }
+        &:last-child {
+          border-radius: 0 4px 4px 0;
+        }
+        &:nth-child(odd) {
+          background-color: #325575;
+          color: #eff8fb;
+        }
+      }
+    }
+  }
+  .body {
+    .ul {
+      list-style: none;
+      display: block;
+      flex-direction: row;
+      align-items: center;
+      justify-content: flex-start;
+      .li {
+        width: 33.3333%;
+        padding: 2em 1em;
+        text-align: left;
+        white-space: nowrap;
+        display: inline-block;
+        font-size: 10px;
+        font-weight: bolder;
+        background-color: #eff8fb;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        position: relative;
+        &:first-child {
+          border-radius: 4px 0 0 4px;
+          padding-left: 45px;
+        }
+        &:last-child {
+          border-radius: 0 4px 4px 0;
+          color: #325575;
+        }
+        &:nth-child(odd) {
+          background-color: #fff;
+        }
+        span {
+          &.check {
+            position: absolute;
+            width: 32px;
+            height: 32px;
+            vertical-align: top;
+            border-radius: 50%;
+            border: 1px solid #325575;
+            display: inline-block;
+            left: 7px;
+            top: 10px;
+            .dot {
+              visibility: hidden;
+              width: 24px;
+              height: 24px;
+              position: relative;
+              background-color: #325575;
+              border-radius: 50%;
+              display: inline-block;
+              left: 3px;
+              top: 3px;
+            }
+          }
+          &.arrow {
+            position: absolute;
+            font-size: 32px;
+            vertical-align: middle;
+            display: inline-block;
+            right: 7px;
+            top: 10px;
+            .col {
+              display: none;
+            }
+          }
+        }
+      }
+      &.active {
+        box-shadow: 0 3px 5px rgba(0, 0, 0, 0.6);
+        .li {
+          span {
+            &.check {
+              .dot {
+                visibility: visible;
+              }
+            }
+            &.arrow {
+              transform: rotate(90deg);
+              transition: all 0.2s ease-in-out;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.row-details {
+  padding: 1em;
+  background-color: #fff;
+  z-index: -1;
+  margin-bottom: 2em;
+  .align-right {
+    justify-content: flex-end;
+    text-align: right;
+  }
+  .btn {
+    max-width: 160px;
+    padding: 1em;
+    background-color: #f00;
+    color: #fff;
+    border-radius: 10px;
+    font-size: 0.8em;
+    ion-icon {
+      vertical-align: middle;
+    }
+  }
+  .ult {
+    display: block;
+    width: 100%;
+    .lit {
+      display: block;
+      width: 100%;
+      text-align: left;
+      position: relative;
+      padding: 1em 0.5em;
+      border-bottom: 1px solid #ccc;
+      ion-icon {
+        position: absolute;
+        right: 0;
+        background-color: #325575;
+        color: #fff;
+        border-radius: 50%;
+      }
+    }
+  }
+}
+
+h1.title {
+  width: 80%;
+  margin: auto 15%;
+  padding: 0.8em 0;
+  font-size: 2.6em;
+  font-weight: bolder;
+  position: relative;
+}
+
+ion-card.details-card {
+  background-color: white;
+  margin: 0em 8em;
+}
+
+ion-card-header.accordian-card-header {
+  background-color: #325575;
+  padding: 1em;
+
+}
+
+ion-card.accordian-card {
+  margin: 0.5em 8em 0em 8em;
+}
+
+h1.content-title {
+  color: #325575;
+  font-weight: bolder;
+  margin: 0em 4.4em;
+  padding: 0.8em 0em;
+  position: relative;
+}
+div.m-t-2 {
+  margin-top: 3.5em;
+}
+ion-card-title.accordian-header-title {
+  font-size: 1em;
+  color: white;
+}
